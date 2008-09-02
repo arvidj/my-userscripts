@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name           Bilddagboken - Show more on hover
 // @namespace      arvid.jakobsson@gmail.com
+// @description    Pops up a friends info box when you hover the friends row in the friends list.
 // @include        http://*.bilddagboken.se/p/friends.html
+// @userscripts-id 33019
 // ==/UserScript==
 
 var BDBShowMoreOnHover = {
