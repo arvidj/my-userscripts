@@ -9,37 +9,42 @@
 var BDBShowMoreOnHover = {
   init: function () {
     var that = this;
-/*
-    var friendRows = $x("//div[@class='friend']");
-    for (var i = 0; friendRow = friendRows[i]; i++) {
-      var infoBox =
-	$xs("./following-sibling::div[starts-with(@id, 'infoBox')]", friendRows);
-      var holder = document.createElement('div');
-      friendRow.parentNode.insertBefore(holder,
-					friendRow);
-      holder.appendChild(friendRow);
-      holder.appendChild(infoBox);
 
-    }
-      */
+    var allFriends = $x("//div[@class='friend']").map(function (friend) {
+			 return that.wrapRow(friend);
+		       });
+    var updatedFriends = allFriends.filter(function(friend) { return $x(".//span[contains(@class, 'newImagesForFriend')]", friend).length == 1; });
 
-    $x("//div[@class='friend']").forEach(function (friendRow) {
-					   var infoBox =
-					     $xs("./following-sibling::div[starts-with(@id, 'infoBox')]", friendRow);
-					   var holder = document.createElement('div');
-					   friendRow.parentNode.insertBefore(holder, friendRow);
-					   holder.appendChild(friendRow);
-					   holder.appendChild(infoBox);
-					   holder.addEventListener("mouseover", curry(that.toggleRow, that,
-										      holder, true), false);
-					   holder.addEventListener("mouseout", curry(that.toggleRow, that,
-										     holder, false), false);
 
-					 });
+    updatedFriends.forEach(function (friendRow) {
+			     that.toggleRow(friendRow, true);
+			   });
+
+/*    allFriends.forEach(function (friendRow) {
+			 friendRow.addEventListener("mouseover", curry(that.toggleRow, that,
+								    holder, true), false);
+			 friendRow.addEventListener("mouseout", curry(that.toggleRow, that,
+								   holder, false), false);
+		       });
+*/
+
   },
+
+  wrapRow: function (friendRow) {
+    var infoBox =
+      $xs("./following-sibling::div[starts-with(@id, 'infoBox')]", friendRow);
+
+    var holder = document.createElement('div');
+    friendRow.parentNode.insertBefore(holder, friendRow);
+    holder.appendChild(friendRow);
+    holder.appendChild(infoBox);
+
+    return holder;
+  },
+
   toggleRow: function (holder, visibility) {
-//    console.log(row);
-//    console.log(visibility);
+    console.log(holder);
+    console.log(visibility);
 
     f = $xs(".//*[starts-with(@id, 'friend')]", holder);
     d = $xs(".//*[starts-with(@id, 'dropdown')]", holder);
@@ -75,7 +80,14 @@ var BDBShowMoreOnHover = {
   }
 };
 
-BDBShowMoreOnHover.init();
+try {
+  console.log("init");
+  BDBShowMoreOnHover.init();
+}
+catch (e) {
+  console.log(e);
+}
+
 /* STD - functions */
 var tictac = {
   now: function () {
