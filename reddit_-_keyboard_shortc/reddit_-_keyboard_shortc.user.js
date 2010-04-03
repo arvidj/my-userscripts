@@ -6,10 +6,38 @@
 
 var reddit = {
   comments: {
-    next: function() {},
+    current: null,
+    commentStructure: null,
+
+    next: function() {
+    },
     prev: function() {},
     left: function() {},
-    right: function() {}
+    right: function() {},
+
+    onload: function() {
+      this.commentStructure = this.findComments();
+    },
+    findComments: function (parentNode, parentStruct) {
+      var _parentNode = parent || $xs("//div[@class='content']/div[starts-with(@id, 'siteTable_')]");
+//      var _parentStruct = parentStruct || [];
+
+      var commentNodes = $x("./div[starts-with(@id, 'thing_row']", _parentNode);
+
+      _parentStruct = commentNodes.map(function (node) {
+					 commentId = attr(node, id).match(/thingrow_t1_(.*)/)[1];
+					 var comment = {
+					   commentId: commentId,
+					   commentNode: node,
+					 };
+					 comment.children = that.findComments($x("./div[starts-with(@id, 'child_')]/div", node), comment);
+					 comment.parent = parentStruct;
+					 return comment;
+				       });
+
+      return _parentStruct;
+
+    }
   }
 };
 debugWrap(reddit.comments, 'reddit.comments');
@@ -21,6 +49,9 @@ var keyboardGoodness = {
        http://www.reddit.com/r/subreddit/comments/id/title/
        */
       path_regexp: /\/r\/.*\/comments\/.*/,
+      onload: function () {
+	reddit.comments.onload.call(reddit.comments);
+      }
       keys: {
 	'j': reddit.comments.next,
 	'k': reddit.comments.prev,
@@ -131,6 +162,33 @@ function create(nn, attr, p) {
     n.setAttribute(a, attr[a]);
   if (p) p.appendChild(n);
   return n;
+}
+
+function attr(n) {
+  var a = $A(arguments).slice(1);
+  var na = $A(n.attributes);
+
+  if (a.length == 0) {
+    return na;
+  }
+  else if (a.length == 1) {
+    a = a.pop();
+    if (a.constructor == String)
+      return n.getAttribute(a);
+    else if (typeof a == 'object') {
+      for (var name in a) {
+	n.setAttribute(name, a[name]);
+      }
+      return null;
+    }
+  }
+  else if (a.length > 2 && a.lenght % 2 == 0) {
+    while (a.length != 0) {
+      var name = a.pop(), val = a.pop();
+      n.setAttribute(name, val);
+    }
+    return null;
+  }
 }
 
 function log() {

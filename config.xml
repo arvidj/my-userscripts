@@ -1,0 +1,279 @@
+<UserScriptConfig>
+	<Script filename="youtubehd.user.js" name="Youtube HD" namespace="userscripts.org" description="Redirects to the HD version of a video" enabled="false" basedir=".">
+		<Include>http://youtube.com/watch?*</Include>
+		<Include>http://www.youtube.com/watch?*</Include>
+		<Include>http://*.youtube.com/watch?*</Include>
+	</Script>
+	<Script filename="erepublikswe.user.js" name="eRepublik Swe" namespace="http://userscripts.org/scripts/show/22767" description="Change the character to swedish character" enabled="false" basedir=".">
+		<Include>http://www.erepublik.com/*</Include>
+	</Script>
+	<Script filename="erepublikcompanyemployee.user.js" name="ERepublik - Company / Employee ratio" namespace="arvid.jakobsson@gmail.com" description="Displays the company / employee ratio on the &quot;post cv&quot; page." enabled="true" basedir=".">
+		<Include>http://www.erepublik.com/post_cv.html</Include>
+	</Script>
+	<Script filename="erepublikmanagedailytask.user.js" name="ERepublik - manage daily tasks" namespace="arvid.jakobsson@gmail.com" description="Allows citizens to add their own daily tasks" enabled="true" basedir=".">
+		<Include>http://www.erepublik.com/daily_alerts.html*</Include>
+	</Script>
+	<Script filename="erepubliklinkinventoryit.user.js" name="ERepublik - Link inventory items to marketplace" namespace="arvid.jakobsson@gmail.com" description="Links inventory items to marketplace" enabled="true" basedir=".">
+		<Include>http://www.erepublik.com/profile-*.html</Include>
+	</Script>
+	<Script filename="erepubliklinkcountryname.user.js" name="ERepublik - Link countrynames to countries" namespace="arvid.jakobsson@gmail.com" description="Links names (such as USA) to their details page in the forums, profile description and in comments" enabled="true" basedir=".">
+		<Include>http://www.erepublik.com/*</Include>
+	</Script>
+	<Script filename="flashbackleave.user.js" name="Flashback Leave" namespace="Kuzmin @ userscripts.org" description="" enabled="true" basedir=".">
+		<Include>*flashback.info/leave.php*</Include>
+	</Script>
+	<Script filename="newyorktimeskilldoublecl.user.js" name="New York Times Kill Doubleclick Dictionary" namespace="http://www.earlh.com" description="Changes NYT article source to stop the doubleclick dictionary popup -- modifies code included in  altClickToSearch.js" enabled="true" basedir=".">
+		<Include>http://*.nytimes.com/*</Include>
+	</Script>
+	<Script filename="colorcoursesbyfield.user.js" name="color courses by field" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir=".">
+		<Include>http://www.student.chalmers.se/sp/programplan?program_id=349&amp;grade=*&amp;conc_id=-1</Include>
+	</Script>
+	<Script filename="slatecom_single-page_for.user.js" name="Slate.com Single-Page Format v0.2" namespace="http://www.elbedesign.com/" description="Rewrites links to slate.com to the single page version. Based on the NYTimes v.2 version." enabled="false" basedir="slatecom_single-page_for">
+		<Include>*</Include>
+	</Script>
+	<Script filename="sgs_login_fixer.user.js" name="SGS login fixer" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="sgs_login_fixer">
+		<Include>http://www.sgsstudentbostader.se/item.aspx?id=86</Include>
+		<Include>http://www.sgsstudentbostader.se/item.aspx?id=1</Include>
+		<Include>http://sgsstudentbostader.se/item.aspx?id=1</Include>
+		<Include>http://sgsstudentbostader.se/item.aspx?id=86</Include>
+		<Include>http://sgsstudentbostader.se/item.aspx?id=979</Include>
+		<Include>http://www.sgsstudentbostader.se/item.aspx?id=979</Include>
+		<Include>http://www.sgsstudentbostader.se/item.aspx?id=93</Include>
+		<Include>http://sgsstudentbostader.se/item.aspx?id=93</Include>
+	</Script>
+	<Script filename="sgs_web_stat_progressbar.user.js" name="SGS Web stat progressbar" namespace="arvid.jakobsson@gmail.com" description="A progressbar for SGS Net web stats" enabled="true" basedir="sgs_web_stat_progressbar">
+		<Include>http://web.sgsnet.se/tvbstats/ip.php</Include>
+		<Include>file:///home/arvid/Desktop/ip.php.html</Include>
+	</Script>
+	<Script filename="google_reader_show_feed_.user.js" name="Google Reader: Show Feed Favicons" namespace="http://henrah.googlepages.com" description="" enabled="false" basedir="google_reader_show_feed_">
+		<Include>htt*://www.google.*/reader/view*</Include>
+	</Script>
+	<Script filename="rewrite_cheggit_image_ho.user.js" name="rewrite cheggit image host" namespace="arvid.jakobsson@gmail.com" description="rewrites old cheggit images to new host" enabled="false" basedir="rewrite_cheggit_image_ho">
+		<Include>http://cheggit.net/*</Include>
+		<Include>http://www.cheggit.net/*</Include>
+	</Script>
+	<Script filename="universal_imagehost_redi.user.js" name="Universal imagehost redirector" namespace="http://determinist.org/greasemonkey" description="Redirects the viewpage on imagehosts directly to the image where possible. Version 2.0i" enabled="true" basedir="universal_imagehost_redi">
+		<Include>*</Include>
+	</Script>
+	<Script filename="no_autofill_for_vasttraf.user.js" name="No autofill for Vasttrafiks reseplanerare" namespace="arvid.jakobsson@gmail.com" description="No autofill for Vasttrafiks reseplanerare" enabled="true" basedir="no_autofill_for_vasttraf">
+		<Include>http://vasttrafik.se/sv/*</Include>
+		<Include>http://vasttrafik.se/sv/Att-resa/Reseplaneraren/?*</Include>
+		<Include>http://vasttrafik.se/</Include>
+		<Include>http://vasttrafik.se/Startsida*</Include>
+	</Script>
+	<Script filename="google_reader_enterretur.user.js" name="Google Reader Enter/Return Opens Item in New Tab" namespace="tag:domnit.org,2006-04:gmscripts" description="Press enter/return to open the currently selected item in a new tab" enabled="true" basedir="google_reader_enterretur">
+		<Include>http://www.google.com/reader/view/*</Include>
+		<Include>https://www.google.com/reader/view/*</Include>
+	</Script>
+	<Script filename="bilddagbokense_ajaxify_m.user.js" name="Bilddagboken.se, ajaxify &quot;mark as seen&quot;" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="bilddagbokense_ajaxify_m">
+		<Include>http://*.bilddagboken.se/p/friends.html*</Include>
+		<Require filename="jquery.js"/>
+	</Script>
+	<Script filename="autofill_form.user.js" name="Autofill form" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="autofill_form">
+		<Include>http://bilddagboken.se/p/create.html?</Include>
+	</Script>
+	<Script filename="torrentbytes_-_fix_redir.user.js" name="torrentbytes - fix redirs" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="torrentbytes_-_fix_redir">
+		<Include>http://torrentbytes.net/*</Include>
+		<Include>http://www.torrentbytes.net/*</Include>
+	</Script>
+	<Script filename="ubiquity_herd_-_sort_by_.user.js" name="Ubiquity Herd - Sort by installations" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="ubiquity_herd_-_sort_by_">
+		<Include>https://labs.toolness.com/ubiquity-herd/*</Include>
+	</Script>
+	<Script filename="ubiquity_command_editor_.user.js" name="Ubiquity Command Editor - Integrate JSLint" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="ubiquity_command_editor_">
+		<Include>chrome://ubiquity/content/editor.html</Include>
+		<Require filename="fulljslint.js"/>
+	</Script>
+	<Script filename="google_account_multi-log.user.js" name="Google Account Multi-Login" namespace="http://eveningnewbs.googlepages.com" description="Replaces &quot;Sign Out&quot; link on Google pages with a select box of accounts." enabled="false" basedir="google_account_multi-log">
+		<Include>http://*.google.tld/*</Include>
+		<Include>https://*.google.tld/*</Include>
+		<Include>http://google.tld/*</Include>
+		<Include>https://google.tld/*</Include>
+		<Exclude>http*://mail.google.tld/*ui=1*</Exclude>
+	</Script>
+	<Script filename="google_-_remove_redirect.user.js" name="Google - remove redirect" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="google_-_remove_redirect">
+		<Include>http://www.google.tld/search?*</Include>
+		<Include>http://google.tld/search?*</Include>
+	</Script>
+	<Script filename="google_reader_-_filter.user.js" name="Google Reader - FIlter" namespace="arvid.jakobsson@gmail.com" description="Filters entries" enabled="false" basedir="google_reader_-_filter">
+		<Include>http://www.google.com/reader/view/*</Include>
+	</Script>
+	<Script filename="bilddagboken_-_show_more.user.js" name="Bilddagboken - Show more on hover" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="bilddagboken_-_show_more">
+		<Include>http://*.bilddagboken.se/p/friends.html</Include>
+	</Script>
+	<Script filename="gmail_saved_searches.user.js" name="Gmail Saved Searches" namespace="http://www.google.com/~mihaip" description="Adds saved and recent seaches." enabled="false" basedir="gmail_saved_searches">
+		<Include>http://mail.google.com/*</Include>
+		<Include>https://mail.google.com/*</Include>
+	</Script>
+	<Script filename="gmail_google_calendar_si.user.js" name="Gmail Google Calendar sidebar" namespace="http://www.r2unit.com/greasemonkey" description="Adds a sidebar to GMail that displays your upcoming events/appointments from Google Calendar." enabled="false" basedir="gmail_google_calendar_si">
+		<Include>http://mail.google.com/mail/*</Include>
+		<Include>https://mail.google.com/mail/*</Include>
+		<Exclude>http://mail.google.com/mail/help/*</Exclude>
+		<Exclude>https://mail.google.com/mail/help/*</Exclude>
+	</Script>
+	<Script filename="gmailagenda.user.js" name="GmailAgenda" namespace="tag:gmailAgenda" description="" enabled="false" basedir="gmailagenda">
+		<Include>https://mail.google.com/mail/*</Include>
+		<Include>http://mail.google.com/mail/*</Include>
+		<Include>https://gmail.google.com/mail/*</Include>
+		<Include>http://gmail.google.com/mail/*</Include>
+		<Include>http://www.google.com/calendar/embed*</Include>
+		<Include>https://www.google.com/calendar/embed*</Include>
+		<Include>https://mail.google.com/a/*</Include>
+		<Include>http://mail.google.com/a/*</Include>
+	</Script>
+	<Script filename="lastfm_-_wafflesfm_searc.user.js" name="Last.fm - Waffles.fm search current artist in radio" namespace="arvid.jakobsson@gmail.com" description="Waffle search current artist in radio" enabled="true" basedir="lastfm_-_wafflesfm_searc">
+		<Include>http://www.last.fm/listen/*</Include>
+	</Script>
+	<Script filename="gmail_addons.user.js" name="Gmail Addons" namespace="http://exstodot.blogspot.com" description="Installs support for various gmail addons" enabled="false" basedir="gmail_addons">
+		<Include>http://mail.google.com/mail/*</Include>
+		<Include>https://mail.google.com/mail/*</Include>
+		<Include>http://mail.google.com/a/*</Include>
+		<Include>https://mail.google.com/a/*</Include>
+	</Script>
+	<Script filename="remember_the_milk__gmail.user.js" name="Remember The Milk + Gmail Addons" namespace="CyberCPA" description="Adds Remember The Milk to Gmail" enabled="false" basedir="remember_the_milk__gmail">
+		<Include>http://mail.google.com/mail/*</Include>
+		<Include>https://mail.google.com/mail/*</Include>
+		<Include>http://mail.google.com/a/*</Include>
+		<Include>https://mail.google.com/a/*</Include>
+	</Script>
+	<Script filename="healthscreen_gmail_integ.user.js" name="Healthscreen GMail integration" namespace="arvid.jakobsson@gmail.com" description="Integrates GMail clients with healthscreen" enabled="false" basedir="healthscreen_gmail_integ">
+		<Include>https://mail.google.com/mail/*</Include>
+		<Include>http://mail.google.com/mail/*</Include>
+		<Require filename="jquerymin.js"/>
+		<Require filename="jqsoapclientjs_4.txt"/>
+		<Require filename="jqxmlutilsjs_5.txt"/>
+		<Require filename="md5.js"/>
+	</Script>
+	<Script filename="reddit_-_open_comments_a.user.js" name="Reddit - open comments and article in new tabs" namespace="http://arvixx.blogspot.com" description="Adds a new button to each article that opens the comments and article in new tabs" enabled="true" basedir="reddit_-_open_comments_a">
+		<Include>http://reddit.com/*</Include>
+		<Include>http://*.reddit.com/*</Include>
+	</Script>
+	<Script filename="chalmers_studentportal_l.user.js" name="Chalmers studentportal, login redirector" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="chalmers_studentportal_l">
+		<Include>https://www.student.chalmers.se/session/login</Include>
+	</Script>
+	<Script filename="bilddagbokense_-_focus_o.user.js" name="Bilddagboken.se - focus on username-input" namespace="arvid.jakobsson@gmail.com" description="" enabled="false" basedir="bilddagbokense_-_focus_o">
+		<Include>http://bilddagboken.se/p/main.html*</Include>
+		<Include>http://www.bilddagboken.se/p/main.html*</Include>
+	</Script>
+	<Script filename="reddit_-_keyboard_shortc.user.js" name="Reddit - Keyboard shortcut goodness!" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="reddit_-_keyboard_shortc">
+		<Include>http://www.reddit.com/*</Include>
+	</Script>
+	<Script filename="stop_paginating_articles.user.js" name="STOP PAGINATING ARTICLES" namespace="arvid.jakobsson@gmail.com" description="" enabled="false" basedir="stop_paginating_articles">
+		<Include>*</Include>
+	</Script>
+	<Script filename="eztv_-_star_shows.user.js" name="EZTV - Star shows" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="eztv_-_star_shows">
+		<Include>http://eztv.it/frontpage.php</Include>
+	</Script>
+	<Script filename="cheggit_-_direct_downloa.user.js" name="Cheggit - Direct download" namespace="arvid.jakobsson@gmail.com" description="no bullshit" enabled="false" basedir="cheggit_-_direct_downloa">
+		<Include>http://cheggit.net/torrents.php?torrentid=*</Include>
+	</Script>
+	<Script filename="ngest-tracker.user.js" name="Ångest-tracker" namespace="arvid.jakobsson@gmail.com" description="" enabled="false" basedir="ngest-tracker">
+		<Include>*</Include>
+	</Script>
+	<Script filename="swedish_names_in_wikiped.user.js" name="Swedish names in wikipedia articles" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="swedish_names_in_wikiped">
+		<Include>http://*.wikipedia.org/wiki/*</Include>
+	</Script>
+	<Script filename="automatic_reload_on_jamb.user.js" name="Automatic reload on Jambai" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="automatic_reload_on_jamb">
+		<Include>http://inbox.jbi.in/*</Include>
+	</Script>
+	<Script filename="eztv_favorites.user.js" name="eztv favorites" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="eztv_favorites">
+		<Include>http://eztv.it/*</Include>
+		<Include>file:///home/arvid/eztv.html</Include>
+	</Script>
+	<Script filename="youtube_-_change_fmt.user.js" name="youtube - change fmt" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="youtube_-_change_fmt">
+		<Include>http://www.youtube.com/watch?v=*</Include>
+		<Include>http://*.youtube.com/watch?v=*</Include>
+	</Script>
+	<Script filename="spotify__lastfm.user.js" name="Spotify + Last.fm" namespace="http://extensions.hesslow.se/" description="Inserts Spotify links on Last.fm" enabled="true" basedir="spotify__lastfm">
+		<Include>http://last.fm/*</Include>
+		<Include>http://*.last.fm/*</Include>
+		<Include>http://lastfm.*/*</Include>
+		<Include>http://*.lastfm.*/*</Include>
+	</Script>
+	<Script filename="hide_allt_om_barn_stuff.user.js" name="hide allt om barn stuff" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="hide_allt_om_barn_stuff">
+		<Include>http://dn.se/*</Include>
+	</Script>
+	<Script filename="studentportalen.user.js" name="studentportalen" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="studentportalen">
+		<Include>http://www.student.chalmers.se/sp/course?course_id=*</Include>
+	</Script>
+	<Script filename="columnisize__paginate.user.js" name="Columnisize &amp; Paginate" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="columnisize__paginate">
+		<Include>http://stevenf.tumblr.com/post/94591835/warning-a-long-rambly-exploration-of-the-state</Include>
+	</Script>
+	<Script filename="cheggit_mode.user.js" name="Cheggit Mode" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="cheggit_mode">
+		<Include>http://cheggit.net/*</Include>
+	</Script>
+	<Script filename="facebook_purity_-_remove.user.js" name="Facebook Purity - Removes annoying quiz and application messages from your facebook homepage" namespace="http://steeev.freehostia.com" description="Removes messages posted by applications to your facebook homepage" enabled="false" basedir="facebook_purity_-_remove">
+		<Include>http://www.facebook.com/*</Include>
+		<Include>http://www.new.facebook.com/*</Include>
+	</Script>
+	<Script filename="eniro_-_automatically_mi.user.js" name="eniro - automatically minify map-urls" namespace="arvid.jakobsson@gmail.com" description="" enabled="false" basedir="eniro_-_automatically_mi">
+		<Include>http://kartor.eniro.se/*</Include>
+		<Include>*</Include>
+	</Script>
+	<Script filename="bdb_autologin.user.js" name="BDB autologin" namespace="arvid.jakobsson@gmail.com" description="" enabled="false" basedir="bdb_autologin">
+		<Include>http://bilddagboken.se/*</Include>
+		<Include>http://*.bilddagboken.se/*</Include>
+	</Script>
+	<Script filename="title_hax.user.js" name="title hax" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="title_hax">
+		<Include>*</Include>
+	</Script>
+	<Script filename="open_with_google_js_pdf_.user.js" name="Open with Google JS PDF Viewer" namespace="http://userscript.org/" description="Looks for PDF links in the page and sets them to open in Google's Javascript PDF reader." enabled="true" basedir="open_with_google_js_pdf_">
+		<Include>*</Include>
+		<Exclude>http://docs.google.com/*</Exclude>
+		<Exclude>https://www.student.chalmers.se/*</Exclude>
+		<Exclude>http://www.cse.chalmers.se/edu/year/2010/course/EDA092/*</Exclude>
+	</Script>
+	<Script filename="twitter_-_pop_login.user.js" name="Twitter -  pop login" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="twitter_-_pop_login">
+		<Include>http://twitter.com/</Include>
+	</Script>
+	<Script filename="cheggit_inliner.user.js" name="cheggit inliner" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="cheggit_inliner">
+		<Include>http://cheggit.net/torrents.php?torrentid=*</Include>
+	</Script>
+	<Script filename="youtube_without_flash_au.user.js" name="Youtube without Flash Auto" namespace="none" description="Adds links below the Youtube video to (a) download the video (HD .mp4 file, no converters are used, no external sites) (b) view the video with an embedded external player (like mplayerplug-in or the totem plugin) " enabled="false" basedir="youtube_without_flash_au">
+		<Include>http://youtube.*/watch*</Include>
+		<Include>http://*.youtube.*/watch*</Include>
+	</Script>
+	<Script filename="imdb-torrents_linker.user.js" name="IMDB-&gt;Torrents Linker" namespace="http://determinist.org/greasemonkey/" description="Places links to various torrentsites on IMDB. Version 2.2a" enabled="true" basedir="imdb-torrents_linker">
+		<Include>http://www.imdb.com/title/*/</Include>
+		<Include>http://www.imdb.com/title/*/#*</Include>
+		<Include>http://www.imdb.com/title/*/combined*</Include>
+		<Include>http://www.imdb.com/title/*/maindetails*</Include>
+		<Include>http://imdb.com/title/*/</Include>
+		<Include>http://imdb.com/title/*/#*</Include>
+		<Include>http://imdb.com/title/*/combined*</Include>
+		<Include>http://imdb.com/title/*/maindetails*</Include>
+		<Include>file:///home/arvid/programmering/greasemonkey/imdbtorrents/Moon%20(2009).html</Include>
+	</Script>
+	<Script filename="b_-_halloween_special_re.user.js" name="/b/ - Halloween special remover" namespace="arvid.jakobsson@gmail.com" description="" enabled="false" basedir="b_-_halloween_special_re">
+		<Include>http://img.4chan.org/b/</Include>
+	</Script>
+	<Script filename="4chan_reload.user.js" name="4chan reload" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="4chan_reload">
+		<Include>http://img.4chan.org/b/*</Include>
+	</Script>
+	<Script filename="whatcd_snatched.user.js" name="What.CD Snatched" namespace="http://jonls.dk" description="Mark snatched torrents." enabled="true" basedir="whatcd_snatched">
+		<Include>http://what.cd/*</Include>
+		<Include>https://ssl.what.cd/*</Include>
+		<Require filename="jquerymin.js"/>
+	</Script>
+	<Script filename="auto_unfocus_everything.user.js" name="Auto unfocus everything" namespace="arvid.jakobsson@gmail.com" description="Always runs unfocus onload, so that no element is focused. " enabled="false" basedir="auto_unfocus_everything">
+		<Include>*</Include>
+	</Script>
+	<Script filename="hide_retards.user.js" name="hide retards" namespace="arvid.jakobsson@gmail.com" description="hide all retards unless the mention me" enabled="true" basedir="hide_retards">
+		<Include>http://twitter.com/</Include>
+	</Script>
+	<Script filename="twitter_-_inline_replies.user.js" name="Twitter - inline replies" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="twitter_-_inline_replies">
+		<Include>http://twitter.com/</Include>
+	</Script>
+	<Script filename="goyada_autofiller.user.js" name="goyada autofiller" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="goyada_autofiller">
+		<Include>http://www.goyada.se/fuel/start.cmd?site=59</Include>
+	</Script>
+	<Script filename="sgs_tvttbok_google_calen.user.js" name="SGS Tvättbok Google Calender Integration" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="sgs_tvttbok_google_calen">
+		<Include>http://tvatta.sgsstudentbostader.se/wwwashcalendar.aspx?*</Include>
+	</Script>
+	<Script filename="b_-_img_ripper.user.js" name="b - img ripper" namespace="arvid.jakobsson@gmail.com" description="" enabled="true" basedir="b_-_img_ripper">
+		<Include>http://boards.4chan.org/*/res/*</Include>
+	</Script>
+	<Script filename="lastfm_-_whatcd.user.js" name="Last.fm -&gt; What.cd" namespace="userscripts.org" description="Provide link from last.fm pages to the what.cd search for that artist, album or track" enabled="false" basedir="lastfm_-_whatcd">
+		<Include>*://*.last*fm*/music/*</Include>
+		<Require filename="jquery-latest.js"/>
+	</Script>
+</UserScriptConfig>

@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name           SGS login fixer
 // @namespace      arvid.jakobsson@gmail.com
-// @include       http://www.sgsstudentbostader.se/item.aspx?id=86
-// @include       http://www.sgsstudentbostader.se/item.aspx?id=1
+// @include     http://www.sgsstudentbostader.se/item.aspx?id=86
+// @include     http://www.sgsstudentbostader.se/item.aspx?id=1
 // @include	http://www.sgsstudentbostader.se/item.aspx?id=979
 // @include	http://www.sgsstudentbostader.se/item.aspx?id=93
-// @include       http://sgsstudentbostader.se/item.aspx?id=86
-// @include       http://sgsstudentbostader.se/item.aspx?id=1
+// @include     http://sgsstudentbostader.se/item.aspx?id=86
+// @include     http://sgsstudentbostader.se/item.aspx?id=1
 // @include	http://sgsstudentbostader.se/item.aspx?id=979
-// @include	http://sgsstudentbostader.se/item.aspx?id=93
+// @include     http://sgsstudentbostader.se/item.aspx?id=93
 // ==/UserScript==
 
 var canvasW, canvasH, canvasCtx;
@@ -20,19 +20,19 @@ function hijackLogin() {
 
   if (client && pin) {
     [client, pin].forEach(function(v) {
-			    v.addEventListener('keyup', function (e) {
-						 if (e.keyCode == 13) {
-						   login();
-						 }
-					       }, false);
-			  });
+        v.addEventListener('keyup', function (e) {
+            if (e.keyCode == 13) {
+              login();
+            }
+          }, false);
+      });
 
     $x("//a[@href='javascript:redirect();']").forEach(function(link) {
-							link.addEventListener('click', function (e) {
-										login();
-									      }, false);
-							link.setAttribute('href', '');
-						      });
+        link.addEventListener('click', function (e) {
+            login();
+          }, false);
+        link.setAttribute('href', '');
+      });
   }
 }
 
